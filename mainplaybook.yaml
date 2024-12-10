@@ -1,6 +1,6 @@
 ---
-- name: execute nginx and apache via role
   hosts: all
+  become: true
 
-  role:
-    roleplaybook
+  roles:
+   - roleplaybook

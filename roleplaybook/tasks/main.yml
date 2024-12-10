@@ -10,7 +10,7 @@
     name: nginx
     state: started
 
-- nmae: apache install
+- name: apache install
   ansible.builtin.apt:
     name: apache2
     state: present
