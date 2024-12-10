@@ -1,0 +1,6 @@
+---
+- name: execute nginx and apache via role
+  hosts: all
+
+  role:
+    roleplaybook

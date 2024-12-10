@@ -1,0 +1,25 @@
+---
+# tasks file for roleplaybook
+- name: install nginx
+  ansible.builtin.apt:
+    name: nginx
+    state: present
+
+- name: nginx started
+  ansible.builtin.service:
+    name: nginx
+    state: started
+
+- nmae: apache install
+  ansible.builtin.apt:
+    name: apache2
+    state: present
+
+- name: copy index.html file to host
+  ansible.builtin.copy:
+    src: index.html
+    dest: /var/www/html
+    mode: 644
+    owner: root
+    group: root
+
